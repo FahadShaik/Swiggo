@@ -30,3 +30,9 @@ NO we can write the entire code in React.createElement or pure react but still J
 -          -delivery
 - -Footer
   \*/
+
+# Hooks in React
+
+The utility function or normal JS function written inside react.
+useState();
+useEffect();
