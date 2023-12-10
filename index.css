@@ -143,3 +143,12 @@ body {
     font-weight: bold;
     list-style: none;
 }
+
+.user-card {
+    border: 1px seagreen solid;
+    margin-bottom: 12px;
+}
+
+.user-card-classbased {
+    border: 1px brown solid;
+}

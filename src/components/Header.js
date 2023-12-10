@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { APP_LOGO } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [loginSwitch, setLoginSwitch] = useState("Login");
+  const onlineStatus = useOnlineStatus();
 
   function handleLogger() {
     loginSwitch === "Login"
@@ -19,6 +21,7 @@ const Header = () => {
       </div>
       <div className="nav-container">
         <ul className="nav-list">
+          <li>Online Status : {onlineStatus === true ? "🟢" : "🔴"}</li>
           <li>
             <Link to="/about">About</Link>
           </li>
